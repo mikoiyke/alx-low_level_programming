@@ -1,0 +1,4 @@
+#!/bin/bash
+touch $CFILE
+chmod u+x $CFILE
+gcc $CFILE
