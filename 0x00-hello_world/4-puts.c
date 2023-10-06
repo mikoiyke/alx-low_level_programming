@@ -1,13 +1,11 @@
-#include <stdio.h>
+#include <stdio>
 
 /**
-  * main - print valve
-  * Description: Print input
+  * main - A program that prints a line + funtion
   * Return: Returns 0
-*/
+  */
 
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle);
-	return (0);
-}
+put("\"Programming is like building a multilingual puzzle");
+return (0);
