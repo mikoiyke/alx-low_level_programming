@@ -1,15 +1,23 @@
 #include <stdio.h>
+
 /**
-  * main - entry DD
-  * Description: HH
-  * Return: success (0)
+  * main - entry point
+  * Return: Success
   */
 int main(void)
 {
-	char letter;
+	char c;
 
-	for (letter = 'a'; letter <= 'Z'; letter++)
-	putchar(letter);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
+
+	for (c = 'A'; c <= 'Z'; c++)
+	{
+		putchar (c);
+	}
+
 	putchar('\n');
 	return (0);
 }
