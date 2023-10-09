@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -23,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d is and is greater than 5\n", n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
 	}
 	return (0);
 }
