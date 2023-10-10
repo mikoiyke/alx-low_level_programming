@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * main - Print putchar
  * Description: Print
@@ -6,16 +6,14 @@ include "main.h"
 */
 int main(void)
 {
-	char print = ("_putchar")
-
-	putchar("_");
-	putchar("p");
-	putchar("u");
-	putchar("t");
-	putchar("c");
-	putchar("h");
-	putchar("a");
-	putchar("r");
-	putchar("/n");
-	return ("0");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }

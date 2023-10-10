@@ -1,1 +1,1 @@
-void _putchar(void);
+char _putchar(char);
