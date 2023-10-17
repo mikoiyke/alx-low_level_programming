@@ -2,9 +2,7 @@
 
 /**
  * puts2 -  prints a string
- *
  * @str: arg *str
- *
  * Return: string to stdout
  */
 

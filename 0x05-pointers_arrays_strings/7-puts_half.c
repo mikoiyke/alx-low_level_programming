@@ -1,7 +1,6 @@
 #include "main.h"
 /**
   * puts_half -  prints a string
-  *
   * @str: arg *str
   *
   * Return: string to stdout
