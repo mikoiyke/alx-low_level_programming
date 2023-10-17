@@ -2,7 +2,6 @@
 
 /**
  * print_rev -  prints a string in reverse
- *
  * @s: arg s
  *
  * Return: void
