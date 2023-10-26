@@ -1,9 +1,11 @@
 #include "main.h"
-/*
- * _puts_recursion -  prints a string, followed by a new line
- * @s: function parameter
- * Return: Always return (0)
- */
+/**
+  * _puts_recursion - main function
+  *
+  * @s: function parameter
+  *
+  * Return: Always return (0)
+  */
 void _puts_recursion(char *s)
 {
 	if (*s)
