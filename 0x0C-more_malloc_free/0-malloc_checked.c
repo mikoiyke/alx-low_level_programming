@@ -2,17 +2,20 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - allocates memory using malloc and exit if failed
+ *malloc_checked - allocates memory using malloc and exit if failed
  * @b: int input
  * Return: success 0
  */
 
 void *malloc_checked(unsigned int b)
 {
-	int *n = malloc(b);
+	void *ptr;
 
-	if (n == 0)
+	ptr = malloc(b);
+
+	if (ptr == NULL)
+	{
 		exit(98);
-
-	return (n);
+	}
+	return (ptr);
 }
