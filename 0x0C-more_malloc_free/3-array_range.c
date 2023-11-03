@@ -3,8 +3,8 @@
 
 /**
   * array_range - creates an array of integers.
-  * int min: minimum integer
-  * int max: maximum integer
+  * @min: minimum integer
+  * @max: maximum integer
   * Return: Success int
   */
 int *array_range(int min, int max)
