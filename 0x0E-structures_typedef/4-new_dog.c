@@ -4,15 +4,15 @@
 
 /**
   *new_dog- creates new dog
-  *@name: char
-  *@age: float
-  *@owner: char
+  *@name: char for name
+  *@age: float for age
+  *@owner: char for owner
   *Return: dog_t
   */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int nl, ol, x;
+int l, ol, x;
 dog_t *doginfo;
 
 if (name == NULL && owner == NULL)
@@ -23,11 +23,11 @@ doginfo = (dog_t *) malloc(sizeof(dog_t));
 if (doginfo == NULL)
 return (NULL);
 
-for (nl = 0; name[nl] != '\0'; nl++)
+for (l = 0; name[l] != '\0'; l++)
 ;
 for (ol = 0; owner[ol] != '\0'; ol++)
 ;
-(*doginfo).name = malloc((sizeof(char) * nl) + 1);
+(*doginfo).name = malloc((sizeof(char) * l) + 1);
 if ((*doginfo).name == NULL)
 {
 	free((*doginfo).name);
@@ -44,7 +44,7 @@ if ((*doginfo).owner == NULL)
 	return (NULL);
 }
 
-for (x = 0; x <= nl; x++)
+for (x = 0; x <= l; x++)
 (*doginfo).name[x] = name[x];
 
 (*doginfo).age = age;
