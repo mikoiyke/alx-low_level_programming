@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
-  *int_index - point of entry
+  *int_index - parameter on each element of an array
   *@array: the array to search
   *@size: size of the array
   *@cmp: function pointer
