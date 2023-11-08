@@ -1,32 +1,57 @@
 #include "3-calc.h"
 
 /**
-  * get_op_func - function pointer that calls another function
-  * @s: the character pointer
-  * Return: pointer to function
+  * op_add - function to add two integers
+  * @a: first integer value
+  * @b: second integer value
+  * Return: sum of the two integer value
   */
-int (*get_op_func(char *s))(int a, int b)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
+	return (a + b);
+}
 
-	int i;
+/**
+  * op_sub - function to subtract
+  * @a: first integer value
+  * @b: second intger value
+  * Return: subtactes two integer value
+  */
 
-	i = 0;
-	while (i <= 5)
-	{
-		if (strcmp(ops[i].op, s) == 0)
-		{
-			return (ops[i].f);
-		}
-		i++;
-	}
-	return (NULL);
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
 
+/**
+  * op_mul - function to multiply two integers
+  * @a: first integer value
+  * @b: second integer value
+  * Return: multiplie two integer value
+  */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+  * op_div - function to divide numbers
+  * @a: first integer value
+  * @b: second integer value
+  * Return: multiplies two number
+  */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+  * op_mod - function to find the remainder value
+  * @a: first integer value
+  * @b: second integer value
+  * Return: of two numbers remainder value
+  */
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
