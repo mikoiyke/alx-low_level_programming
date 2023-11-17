@@ -1,17 +1,14 @@
 #include <stdio.h>
 
-void before_main_function(void) __attribute__((constructor));
+void first(void) __attribute__ ((constructor));
 
-void before_main_function(void)
+/**
+ * first - prints the provided sentence before the main
+ * function is executed before main
+ */
+void first(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
+
 }
-
-int main(void)
-{
-	/* Your main function code goes here */
-	printf("Inside the main function.\n");
-
-	return 0;
-}
-
